@@ -18,21 +18,21 @@
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<!-- hibernate dependency -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.4.1.Final</version>
+		</dependency>
+		<!-- end -->
 
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
-			<groupId>joda-time</groupId>
-			<artifactId>joda-time</artifactId>
-			<version>${joda-time.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>${commons-lang3.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jvnet.jaxb2_commons</groupId>
-			<artifactId>jaxb2-basics</artifactId>
-			<version>0.6.5</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.42</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
@@ -46,50 +46,6 @@
 
 	<build>
 		<plugins>
-			<!-- For Code Generation -->
-			<plugin>
-				<groupId>org.jvnet.jaxb2.maven2</groupId>
-				<artifactId>maven-jaxb2-plugin</artifactId>
-				<version>0.12.3</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<schemaDirectory>src/main/resources/workflow</schemaDirectory>
-							<schemaIncludes>
-								<include>aaupush.xsd</include>
-							</schemaIncludes>
-							<bindingDirectory>src/main/resources/workflow</bindingDirectory>
-							<generateDirectory>target/generated-sources/xjc/workflow</generateDirectory>
-							<generatePackage>com.websystique.xml.workflow</generatePackage>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<!-- For Adding Generated code directory as source folder -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.9</version>
-				<executions>
-					<execution>
-						<id>add-source</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>add-source</goal>
-						</goals>
-						<configuration>
-							<sources>
-								<source>${basedir}/target/generated-sources/xjc/workflow</source>
-							</sources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<!-- end -->
-
 			<!-- For JUnit code coverage -->
 			<plugin>
 				<groupId>org.jacoco</groupId>
