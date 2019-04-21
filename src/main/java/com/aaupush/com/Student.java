@@ -4,12 +4,16 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class Student {
 
 	private String Firstname;
 	private String Lastname;
 	private String Email;
 	private String Password;
+	private int entryyear;
+	private int sectionnumber;
+	private String registration;
+	private int phone;
 	@Id
 	private int Id;
 
@@ -43,6 +47,38 @@ public class User {
 
 	public void setPassword(String password) {
 		Password = password;
+	}
+
+	public int getEntryyear() {
+		return entryyear;
+	}
+
+	public void setEntryyear(int entryyear) {
+		this.entryyear = entryyear;
+	}
+
+	public int getSectionnumber() {
+		return sectionnumber;
+	}
+
+	public void setSectionnumber(int sectionnumber) {
+		this.sectionnumber = sectionnumber;
+	}
+
+	public String getRegistration() {
+		return registration;
+	}
+
+	public void setRegistration(String registration) {
+		this.registration = registration;
+	}
+
+	public int getPhone() {
+		return phone;
+	}
+
+	public void setPhone(int phone) {
+		this.phone = phone;
 	}
 
 	public int getId() {
