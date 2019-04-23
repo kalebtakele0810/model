@@ -6,50 +6,51 @@ import javax.persistence.Id;
 @Entity
 public class User {
 
-	private String Firstname;
-	private String Lastname;
-	private String Email;
-	private String Password;
-	@Id
-	private int Id;
+	private String firstname;
+	private String lastname;
+	private String email;
+	private String password;
+
+	@id
+	private int id;
 
 	public String getFirstname() {
-		return Firstname;
+		return firstname;
 	}
 
 	public void setFirstname(String firstname) {
-		Firstname = firstname;
+		this.firstname = firstname;
 	}
 
 	public String getLastname() {
-		return Lastname;
+		return lastname;
 	}
 
 	public void setLastname(String lastname) {
-		Lastname = lastname;
+		this.lastname = lastname;
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 
 	public int getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
 	}
-}
+
