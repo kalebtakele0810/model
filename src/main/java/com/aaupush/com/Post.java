@@ -3,16 +3,16 @@ package com.aaupush.com;
 import java.util.ArrayList;
 import java.util.Collection;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.Id;
 @Entity
-/**
- * Created by pcc on 4/21/2019.
- */
 public class Post {
-    private int id;
+	@Id
+	private int id;
     private String content;
     private int type;
     private String date;
-    @Id
+    
     @ManyToMany(mappedBy="Post")
     private Collection<Student> StudentList= new ArrayList();
 

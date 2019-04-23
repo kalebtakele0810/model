@@ -10,8 +10,7 @@ public class User {
 	private String lastname;
 	private String email;
 	private String password;
-
-	@id
+	@Id
 	private int id;
 
 	public String getFirstname() {
@@ -53,4 +52,4 @@ public class User {
 	public void setId(int id) {
 		this.id = id;
 	}
-
+}

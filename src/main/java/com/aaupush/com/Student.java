@@ -2,6 +2,8 @@ package com.aaupush.com;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -15,20 +17,19 @@ public class Student {
 	private int entryyear;
 	private int sectionnumber;
 	private String registration;
-	@id
+	private int phone;
+	@Id
+	private int id;
 	@ManyToMany
-	private Collection<Post> Post= new ArrayList<Post>();
+	private Collection<Post> post = new ArrayList<Post>();
 
 	public Collection<com.aaupush.com.Post> getPost() {
-		return Post;
-
-	public void setPost(Collection<com.aaupush.com.Post> post) {
-		Post = post;
+		return post;
 	}
 
-	private int phone;
-
-	private int id;
+	public void setPost(Collection<com.aaupush.com.Post> post) {
+		post = post;
+	}
 
 	public String getFirstname() {
 		return firstname;
