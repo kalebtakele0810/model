@@ -1,9 +1,10 @@
 package com.aaupush.com;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import org.dom4j.Text;
-
+@Entity
 public class Forum {
 @Id
 private int id;
