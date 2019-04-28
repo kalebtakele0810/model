@@ -8,7 +8,7 @@ public class Course {
 	@Id
 private int id;
 private String name;
-private String courcecode;
+private String coursecode;
 private float ects;
 private float credithour;
 public int getId() {
@@ -23,11 +23,11 @@ public String getName() {
 public void setName(String name) {
 	this.name = name;
 }
-public String getCourcecode() {
-	return courcecode;
+public String getCoursecode() {
+	return coursecode;
 }
-public void setCourcecode(String courcecode) {
-	this.courcecode = courcecode;
+public void setCoursecode(String coursecode) {
+	this.coursecode = coursecode;
 }
 public float getEcts() {
 	return ects;

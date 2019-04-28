@@ -12,7 +12,7 @@ public class Student {
 	private String password;
 	private int entryyear;
 	private int sectionnumber;
-	private String registration;
+	private String registrationid;
 	private int phone;
 	@Id
 	private int id;
@@ -65,12 +65,12 @@ public class Student {
 		this.sectionnumber = sectionnumber;
 	}
 
-	public String getRegistration() {
-		return registration;
+	public String getRegistrationid() {
+		return registrationid;
 	}
 
-	public void setRegistration(String registration) {
-		this.registration = registration;
+	public void setRegistrationid(String registrationid) {
+		this.registrationid = registrationid;
 	}
 
 	public int getPhone() {

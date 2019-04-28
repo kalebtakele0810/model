@@ -8,10 +8,10 @@ import org.dom4j.Text;
 public class Forum {
 @Id
 private int id;
-private String forum_id;
+private String forumid;
 private Text description;
 private Boolean privacy;
-private String join_code;
+private String joincode;
 private String name;
 public int getId() {
 	return id;
@@ -19,17 +19,17 @@ public int getId() {
 public void setId(int id) {
 	this.id = id;
 }
-public String getForum_id() {
-	return forum_id;
+public String getForumid() {
+	return forumid;
 }
-public void setForum_id(String forum_id) {
-	this.forum_id = forum_id;
+public void setForumid(String forumid) {
+	this.forumid = forumid;
 }
-public String getJoin_code() {
-	return join_code;
+public String getJoincode() {
+	return joincode;
 }
-public void setJoin_code(String join_code) {
-	this.join_code = join_code;
+public void setJoincode(String joincode) {
+	this.joincode = joincode;
 }
 
 public Text getDescription() {
