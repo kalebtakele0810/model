@@ -2,10 +2,6 @@ package com.aaupush.com;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-
-import java.util.ArrayList;
-import java.util.Collection;
 
 @Entity
 public class Student {
@@ -20,16 +16,6 @@ public class Student {
 	private int phone;
 	@Id
 	private int id;
-	@ManyToMany
-	private Collection<Post> post = new ArrayList<Post>();
-
-	public Collection<com.aaupush.com.Post> getPost() {
-		return post;
-	}
-
-	public void setPost(Collection<com.aaupush.com.Post> post) {
-		post = post;
-	}
 
 	public String getFirstname() {
 		return firstname;

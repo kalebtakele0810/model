@@ -1,11 +1,9 @@
 package com.aaupush.com;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.Id;
 @Entity
 public class Post {
@@ -15,19 +13,6 @@ public class Post {
     private int type;
     private Date pubdate;
     
-    @ManyToMany(mappedBy="Post")
-    private Collection<Student> StudentList= new ArrayList();
-
-    public Collection<Student> getStudentList() {
-        return StudentList;
-    }
-
-    public void setStudentList(Collection<Student> studentList) {
-        StudentList = studentList;
-    }
-
-private int Id;
-
     public String getContent() {
         return content;
     }

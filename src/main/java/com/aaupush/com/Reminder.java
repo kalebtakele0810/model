@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 @Entity
 public class Reminder {
 private String title;
-private Date duedate;
+private Date due_date;
 private String place;
 public String getTitle() {
 	return title;
@@ -15,11 +15,11 @@ public String getTitle() {
 public void setTitle(String title) {
 	this.title = title;
 }
-public Date getDuedate() {
-	return duedate;
+public Date getDue_date() {
+	return due_date;
 }
-public void setDuedate(Date duedate) {
-	this.duedate = duedate;
+public void setDuedate(Date due_date) {
+	this.due_date = due_date;
 }
 public String getPlace() {
 	return place;

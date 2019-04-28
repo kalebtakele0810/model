@@ -14,5 +14,11 @@
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
         <mapping class="com.aaupush.com.User" />
+        <mapping class="com.aaupush.com.Student" />
+        <mapping class="com.aaupush.com.Post" />
+        <mapping class="com.aaupush.com.Course" />
+        <mapping class="com.aaupush.com.Forum" />
+        <mapping class="com.aaupush.com.Reminder" />
+        
     </session-factory>
 </hibernate-configuration>
